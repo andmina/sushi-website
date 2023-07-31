@@ -1,0 +1,48 @@
+.footer__nav {
+  width: 100%;
+  padding: 20px 40px;
+  background: var(--color-white);
+
+  flex-wrap: wrap;
+  gap: 20px;
+
+  overflow: hidden;
+}
+
+.footer__nav ul {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.footer__logo {
+  flex: 1; /* gives the ability to expand how much ever it needs to */
+  display: flex;
+  position: relative;
+  padding: 20px;
+}
+
+.footer__logo h4 {
+  padding-left: 30px;
+  color: var(--primary-color);
+
+  font-weight: 700;
+  font-family: var(--playfair-display);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.footer__menu,
+.footer_menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 64px;
+  list-style: none;
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+}
