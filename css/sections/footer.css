@@ -1,4 +1,4 @@
-.footer__nav {
+.footer {
   width: 100%;
   padding: 20px 40px;
   background: var(--color-white);
@@ -9,7 +9,21 @@
   overflow: hidden;
 }
 
-.footer__nav ul {
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--playfair-display);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
+  cursor: pointer;
+}
+
+.footer__logo span {
+  color: var(--primary-color);
+}
+
+.footer ul {
   list-style: none;
 
   display: flex;
@@ -18,31 +32,31 @@
   gap: 64px;
 }
 
-.footer__logo {
-  flex: 1; /* gives the ability to expand how much ever it needs to */
-  display: flex;
-  position: relative;
-  padding: 20px;
+.footer ul:last-child {
+  gap: 32px;
 }
 
-.footer__logo h4 {
-  padding-left: 30px;
-  color: var(--primary-color);
-
-  font-weight: 700;
-  font-family: var(--playfair-display);
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.footer__menu,
-.footer_menu-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 64px;
-  list-style: none;
+.footer__nav li {
+  font-size: 16px;
+  font-weight: 500;
   font-family: var(--plus-jakarta-sans);
   text-transform: uppercase;
+  color: var(--secondary-color);
+
+  cursor: pointer;
+}
+
+.footer__social li {
+  width: 42px;
+  height: 42px;
+
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+}
+
+.footer__social li img {
+  width: 45%;
+  height: 45%;
+
+  object-fit: contain;
 }
